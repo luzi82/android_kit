@@ -11,7 +11,7 @@
 
     &lt;string name="i18n_version"&gt;<datetime format="yyyyMMddHHmmss"/>&lt;/string&gt;
 
-<for_view src="tid_02" did="2" id="tid_03">    &lt;string name="<view_coor src="tid_03" did="2"/>"&gt;<view_value src="tid_03"/>&lt;/string&gt;
+<for_view src="tid_02" did="2" id="tid_03">    &lt;string name="<view_coor src="tid_03" did="2"/>"&gt;<unxml><replace><pair><from>\</from><to>\\</to></pair><pair><from>'</from><to>\'</to></pair><scope><view_value src="tid_03"/></scope></replace></unxml>&lt;/string&gt;
 </for_view>&lt;/resources&gt;
 </scope>
 				</file_out>
