@@ -1,11 +1,13 @@
 #!/bin/sh
 
-PROJECT_PATH=/home/luzi82/project/tool/eclipse_workspace/CodeTemplate
-TEMPLATE_PATH=/home/luzi82/project/android/tool/android_kit/jni_version.xml
+MY_PATH=$(dirname $(readlink -f $0))
+
+. ${MY_PATH}/_androidkit_config.sh
+TEMPLATE_PATH=${MY_PATH}/jni_version.xml
 
 java \
- -cp ${PROJECT_PATH}/bin/ \
+ -cp ${CODETEMPLATE_PATH}/bin/ \
  guri.codetemplate.CodeTemplate \
- -g ${PROJECT_PATH}/res/code_template_global_config.xml \
+ -g ${CODETEMPLATE_PATH}/res/code_template_global_config.xml \
  -t ${TEMPLATE_PATH}
 
